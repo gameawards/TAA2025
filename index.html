@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+
+<head>
+  <script src="assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <link rel="icon" type="image/png" href="assets/ico.png">
+  <title>Axuléia Awards 2025</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+
+
+    .navico {
+      filter: brightness(75%);
+    }
+
+    .navico:hover {
+      filter: brightness(0) saturate(100%) invert(75%) sepia(15%) saturate(5844%) hue-rotate(321deg) brightness(107%) contrast(112%);
+
+    }
+
+    .navico1 {
+      filter: brightness(75%);
+    }
+
+    .navico1:hover {
+      filter: brightness(0) saturate(100%) invert(75%) sepia(15%) saturate(5844%) hue-rotate(321deg) brightness(107%) contrast(112%);
+
+    }
+
+    .bg-dark {
+      background-color: #080b0e !important;
+
+    }
+
+
+    .nav-link {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    .nav-link:hover {
+      color: #ff975b;
+    }
+
+
+    .arrow {
+      position: absolute;
+      bottom: 50px;
+      /* Distância do centro para baixo */
+      left: 50%;
+      transform: translateX(-50%);
+      /* Centraliza horizontalmente */
+      font-size: 5rem;
+      color: #ffffff;
+      opacity: 0;
+      visibility: hidden;
+      animation: bounce 1.5s infinite;
+      transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      .navico1 {
+        display: none;
+
+      }
+
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    footer .row>div {
+      margin: 0 70px;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--ICONE DA NAVBAR-->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+    </symbol>
+
+  </svg>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-md-none" href="index.html">
+        <img src="assets/navico.png" alt="" width="35px" style=" margin-top: -5px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">THE AXULÉIA AWARDS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 justify-content-between">
+            <li class="nav-item navico1"><a class="nav-link" href="index.html">
+                <img src="assets/navico.png" class="navico1" alt="" width="35px"
+                  style="position: absolute; margin-top: -5px;">
+              </a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/nomeados.html">Nomeados</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/discord.html">Discord</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/2024.html">Axuléia 2024</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#cart" />
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="fundo">
+    <img src="assets/sobre_background.jpg" alt="" style="width: 100%; height: 100%; position: fixed; z-index: -1;">
+  </div>
+
+  <main style="height: 112vh; overflow: hidden;">
+    <video id="background-video" autoplay muted class="w-100 h-100 object-fit-cover"
+      style="z-index: 1; object-position: top; margin-top: -30px;">
+      <source src="assets/background-video.mp4" type="video/mp4">
+    </video>
+  </main>
+
+  <div class="title">
+    <div class="title1">
+      <p style="margin-top: 55px;">THE</p>
+      <p style="margin-top: -108px;">AXULÉIA</p>
+      <p style="margin-top: -108px;">AWARDS</p>
+    </div>
+    <div class="date">
+      <p>10.12.2025</p>
+    </div>
+    <div class="event">
+      <p>UM EVENTO NO DISCORD</p>
+    </div>
+  </div>
+
+  <div class="arrow" id="arrow"><i class="bi bi-chevron-compact-down"></i></div>
+  <div class="trailer">
+    <img src="assets/trailerbackground.png" alt="" style="width: 100%; height: 100%; margin-top: 63px;">
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3I3RZWUq2HQ?si=88BFRO1uG91gBMSL"
+    class="playertrailer" title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <div class="trailermobile" style="display: none;">
+    <img src="assets/trailerbackgroundmobile.png" alt="" style="width: 100%; height: 100%;">
+  </div>
+
+  <div class="">
+    <img src="assets/watchbackground.png" alt="" style="width: 100%; height: 100%; margin-top: px;">
+
+    <div class="buttonassistir">
+      <div class="animated-border">
+        <a href="pages/assistir.html"><button>
+            <p>ASSISTIR</p>
+          </button></a>
+      </div>
+    </div>
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+
+          <title>AXULÉIA</title>
+          <img width="54" height="60" src="assets/navico.png" alt="">
+          </svg>
+          <small class="d-block mb-3 text-body-secondary">&copy; 2024–2025</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Siga-nos</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="https://discord.gg/D4BhBHAmAw"><i
+                  class="bi bi-discord"></i>ㅤDiscord</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://www.instagram.com/theaxuleiaawards/"><i
+                  class="bi bi-instagram"></i>ㅤInstagram</a></li>
+            <li><a class="link-secondary text-decoration-none"
+                href="https://www.youtube.com/@THEAXULEIAAWARDSOFICIAL"><i class="bi bi-youtube"></i>ㅤYoutube</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contatos</h5>
+          <ul class="list-unstyled text-small">
+            <li style="color: rgb(123, 123, 123);">axuleiainc@gmail.com</li>
+            <li style="color: rgb(123, 123, 123);">(19) 99737-6314</li>
+            <li style="color: rgb(123, 123, 123);">Espirito Santo Do Pinhal, São Paulo - SP</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('fundo').style.opacity = "0";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.getElementById('fundo').style.opacity = "1"; // Torna o elemento visível
+        }, 500); // Espera 1.5 segundos antes de alterar a opacidade
+      });
+
+
+
+      document.getElementById('background-video').addEventListener('ended', function () {
+        this.pause();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.body.classList.add("loaded");
+        }, 1500); // Espera 2 segundos para mostrar o conteúdo
+      });
+
+      let arrow = document.getElementById("arrow");
+
+      // Faz a seta aparecer após 2 segundos
+      setTimeout(() => {
+        arrow.style.visibility = "visible";
+        arrow.style.opacity = "1";
+      }, 2000);
+
+      // Esconde a seta ao rolar a página
+      window.addEventListener("scroll", () => {
+        arrow.style.opacity = "0";
+        setTimeout(() => {
+          arrow.style.visibility = "hidden";
+        }, 1000); // Tempo para sumir após fade-out
+      });
+    </script>
+
+</body>
+
+</html>
