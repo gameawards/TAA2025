@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <link rel="icon" type="image/png" href="../assets/ico.png">
+    <title>Axuléia Awards 2025</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .navico {
+            filter: brightness(75%);
+        }
+
+        .navico:hover {
+            filter: brightness(0) saturate(100%) invert(75%) sepia(15%) saturate(5844%) hue-rotate(321deg) brightness(107%) contrast(112%);
+
+        }
+
+        .navico1 {
+            filter: brightness(75%);
+        }
+
+        .navico1:hover {
+            filter: brightness(0) saturate(100%) invert(75%) sepia(15%) saturate(5844%) hue-rotate(321deg) brightness(107%) contrast(112%);
+
+        }
+
+        .bg-dark {
+            background-color: #080b0e !important;
+
+        }
+
+        .nav-link {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: #ff975b;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .icon-link>.bi {
+            width: .75em;
+            height: .75em;
+        }
+
+        .botao-container {
+            position: relative;
+            width: 255.55px;
+            height: 70px;
+            border-radius: 11px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gradient-frame {
+            position: absolute;
+            width: 336px;
+            height: 336px;
+            background: conic-gradient(from 0deg at 50% 50%,
+                    rgb(255, 235, 207) 72.973deg,
+                    rgba(255, 220, 173, 0) 115.2deg,
+                    rgba(255, 223, 182, 0.31) 142.202deg,
+                    rgba(255, 223, 182, 0.32) 143.024deg,
+                    rgb(255, 231, 199) 201.6deg,
+                    rgb(255, 237, 214) 256.216deg,
+                    rgba(181, 181, 181, 0) 291.6deg,
+                    rgb(255, 235, 207) 360deg);
+            z-index: 1;
+            border-radius: 50%;
+            top: -133px;
+            left: -40px;
+            transition: transform 0.5s ease;
+        }
+
+        .grid-bg {
+            position: absolute;
+            width: 251px;
+            height: 66px;
+            background-color: #040a11;
+            border-radius: 9px;
+            z-index: 2;
+            top: 2px;
+            left: 2.3px;
+        }
+
+        .botao-frame {
+            position: absolute;
+            width: 247px;
+            height: 62px;
+            background-color: #FF9857;
+            border-radius: 8px;
+            z-index: 3;
+            top: 4px;
+            left: 4.3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease;
+        }
+
+        .botao-texto {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-size: 22px;
+            color: #0B1B29;
+            letter-spacing: 0.06em;
+            z-index: 4;
+            position: relative;
+        }
+
+        .botao-container:hover .gradient-frame {
+            transform: rotate(180deg);
+        }
+
+        .botao-container:hover .botao-frame {
+            background-color: #FFAC78;
+        }
+
+
+
+        .botao-container2 {
+            position: relative;
+            width: 400px;
+            /* antes: 255.55px */
+            height: 70px;
+            border-radius: 11px;
+            overflow: hidden;
+            margin-left: 300px;
+            margin-top: -70px;
+            cursor: pointer;
+        }
+
+        .gradient-frame2 {
+            position: absolute;
+            width: 490px;
+            height: 436px;
+            background: conic-gradient(from 0deg at 50% 50%,
+                    rgb(255, 235, 207) 72.973deg,
+                    rgba(255, 220, 173, 0) 115.2deg,
+                    rgba(255, 223, 182, 0.31) 142.202deg,
+                    rgba(255, 223, 182, 0.32) 143.024deg,
+                    rgb(255, 231, 199) 201.6deg,
+                    rgb(255, 237, 214) 256.216deg,
+                    rgba(181, 181, 181, 0) 291.6deg,
+                    rgb(255, 235, 207) 360deg);
+            z-index: 1;
+            border-radius: 100%;
+            top: -183px;
+            left: -40px;
+            transition: transform 0.5s ease;
+        }
+
+        .grid-bg2 {
+            position: absolute;
+            width: 395px;
+            /* antes: 251px */
+            height: 66px;
+            background-color: #040a11;
+            border-radius: 9px;
+            z-index: 2;
+            top: 2px;
+            left: 2.3px;
+        }
+
+        .botao-frame2 {
+            position: absolute;
+            width: 391px;
+            /* antes: 247px */
+            height: 62px;
+            background-color: #04080D;
+            border-radius: 8px;
+            z-index: 3;
+            top: 4px;
+            left: 4.3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease;
+        }
+
+        .botao-texto2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-size: 22px;
+            color: #ffffff;
+            letter-spacing: 0.06em;
+            z-index: 4;
+            position: relative;
+        }
+
+        .botao-container2:hover .gradient-frame2 {
+            transform: rotate(180deg);
+        }
+
+        .botao-container2:hover .botao-frame2 {
+            background-color: #16212E;
+        }
+
+
+        /*
+ * Custom translucent site header
+ */
+
+        #discord {
+            opacity: 0;
+            /* Inicialmente invisível */
+            animation: fadeIn 1s ease-in-out 1.5s forwards;
+            /* Inicia após 2s */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        .site-header {
+            background-color: rgba(0, 0, 0, .85);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+        .product-device {
+            position: absolute;
+            right: 10%;
+            bottom: -30%;
+            width: 300px;
+            height: 540px;
+            background-color: #333;
+            border-radius: 21px;
+            transform: rotate(30deg);
+        }
+
+        .product-device::before {
+            position: absolute;
+            top: 10%;
+            right: 10px;
+            bottom: 10%;
+            left: 10px;
+            content: "";
+            background-color: rgba(255, 255, 255, .1);
+            border-radius: 5px;
+        }
+
+        .product-device-2 {
+            top: -25%;
+            right: auto;
+            bottom: 0;
+            left: 5%;
+            background-color: #e5e5e5;
+        }
+
+
+        /*
+ * Extra utilities
+ */
+
+        .flex-equal>* {
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal>* {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navico1 {
+                display: none;
+
+            }
+
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .btn {
+            color: rgb(0, 0, 0);
+            border-color: #ffffff;
+            margin-right: 10px;
+            box-shadow: 4px 4px 4px #320391;
+            font-weight: bold;
+        }
+
+
+        .btn-container a:nth-of-type(1):hover {
+            background-color: #ffffff00 !important;
+            border-color: #320391 !important;
+            transition: 0.3s ease-in-out;
+            transform: translate(-1px, -1px) !important;
+            color: #936be4;
+        }
+
+        /* Botão VIEW DATE */
+        .btn-container a:nth-of-type(2):hover {
+            background-color: #003186 !important;
+            border-color: black;
+            color: white !important;
+            transform: translate(-1px, -1px) !important;
+            transition: 0.3s ease-in-out;
+        }
+
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        @media (max-width: 767px) {
+            #discord {
+                color: #ffffff;
+                text-align: justify;
+                margin-right: 130px;
+
+            }
+
+
+        }
+
+        @media (max-width: 639px) {
+            #background-video {
+                display: none;
+            }
+
+            .main {
+                background-color: black;
+            }
+
+            .span1 {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 535px) {
+            #discord {
+                display: flex;
+                flex-direction: column;
+                /* Mantém os elementos empilhados */
+                align-items: center;
+                /* Centraliza horizontalmente */
+                justify-content: center;
+                /* Centraliza verticalmente */
+                text-align: center;
+                /* Centraliza o texto */
+                width: 100%;
+                /* Garante que a div ocupe a largura total */
+                position: absolute;
+                left: 30%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #discord a {
+                margin: 5px;
+                /* Espaçamento entre os botões */
+            }
+
+            .btn-container {
+                display: flex;
+                gap: 10px;
+                /* Espaço entre os botões */
+            }
+
+        }
+
+
+        @media (max-width: 1700px) {
+            .icodiscord {
+                display: none;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        footer .row>div {
+            margin: 0 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--ICONE DA NAVBAR-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path
+                d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </symbol>
+
+    </svg>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="../index.html">
+                <img src="../assets/navico.png" alt="" width="35px" style=" margin-top: -5px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">THE AXULÉIA AWARDS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-between">
+                        <li class="nav-item navico1"><a class="nav-link" href="../index.html">
+                                <img src="../assets/navico.png" class="navico1" alt="" width="35px"
+                                    style="position: absolute; margin-top: -5px;">
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/nomeados.html">Nomeados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/discord.html">Discord</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/2024.html">Axuléia 2024</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">
+                                <svg class="bi" width="24" height="24">
+                                    <use xlink:href="#cart" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="fundo">
+        <img src="../assets/sobre_background.jpg" alt=""
+            style="width: 100%; height: 100%; position: fixed; z-index: -1;">
+    </div>
+
+    <main class="main position-relative" style="width: 100vw; height: 100vh; top: -48px;">
+        <video id="background-video" autoplay muted class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            style="z-index: -1;">
+            <source src="../assets/background-video-nomeados.mp4" type="video/mp4">
+        </video>
+
+        <div class="p-lg-9 my-5 position-relative discord" id="discord" style="margin-left: 57%; top: 24%; z-index: 1;">
+            <h1 class="display-7 font-weight-normal"
+                style="color: #ff975b; font-size: 110px; letter-spacing: -3px; font-weight: bold;">
+                <span class="span1"> NOMEADOS </span>
+            </h1>
+            <p class="lead font-weight-normal"
+                style="font-size: 27px; margin-left: 1%; font-weight: bold; margin-top: 16px;">VEJA OS NOMEADOS PARA AS
+                CATEGORIAS DO TAA 2025</p>
+            <a href="GOTY.html">
+                <div class="botao-container" style="margin-left: 1%; margin-top: 35px;">
+                    <div class="gradient-frame"></div>
+                    <div class="grid-bg"></div>
+                    <div class="botao-frame">
+                        <span class="botao-texto">VER NOMEADOS</span>
+                    </div>
+                </div>
+            </a>
+            <a href="categorias.html">
+                <div class="botao-container2">
+                    <div class="gradient-frame2"></div>
+                    <div class="grid-bg2"></div>
+                    <div class="botao-frame2">
+                        <span class="botao-texto2">VER TODAS AS CATEGORIAS</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        </div>
+
+
+
+    </main>
+    </main>
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+
+                <title>AXULÉIA</title>
+                <img width="54" height="60" src="../assets/navico.png" alt="">
+                </svg>
+                <small class="d-block mb-3 text-body-secondary">&copy; 2024–2025</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Siga-nos</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="https://discord.gg/D4BhBHAmAw"><i
+                                class="bi bi-discord"></i>ㅤDiscord</a></li>
+                    <li><a class="link-secondary text-decoration-none"
+                            href="https://www.instagram.com/theaxuleiaawards/"><i
+                                class="bi bi-instagram"></i>ㅤInstagram</a></li>
+                    <li><a class="link-secondary text-decoration-none"
+                            href="https://www.youtube.com/@THEAXULEIAAWARDSOFICIAL"><i
+                                class="bi bi-youtube"></i>ㅤYoutube</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contatos</h5>
+                <ul class="list-unstyled text-small">
+                    <li style="color: rgb(123, 123, 123);">axuleiainc@gmail.com</li>
+                    <li style="color: rgb(123, 123, 123);">(19) 99737-6314</li>
+                    <li style="color: rgb(123, 123, 123);">Espirito Santo Do Pinhal, São Paulo - SP</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        document.getElementById('fundo').style.opacity = "0";
+
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.getElementById('fundo').style.opacity = "1"; // Torna o elemento visível
+            }, 500); // Espera 1.5 segundos antes de alterar a opacidade
+        });
+
+
+        document.getElementById('background-video').addEventListener('ended', function () {
+            this.pause();
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.body.classList.add("loaded");
+            }, 1500); // Espera 2 segundos para mostrar o conteúdo
+        });
+    </script>
+
+</body>
+
+</html>
